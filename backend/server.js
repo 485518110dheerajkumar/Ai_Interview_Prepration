@@ -67,6 +67,7 @@ app.get("/api/problems", async (req, res) => {
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.get("/", (req, res) => {
+  console.log("server chal pada");
   res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
 });
 
