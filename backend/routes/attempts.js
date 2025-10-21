@@ -1,6 +1,6 @@
 // backend/routes/attempts.js
-import express from "express";
-import Attempt from "../models/CodingAttempt";
+const express = require("express");
+const Attempt = require("../models/CodingAttempt");
 
 const router = express.Router();
 
@@ -25,4 +25,4 @@ router.get("/", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;

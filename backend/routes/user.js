@@ -1,10 +1,10 @@
-import express from"express";
+const express = require("express");
 const router = express.Router();
-import User from "../models/User";
-import bcrypt from "bcrypt";
-import multer from "multer";
-import path from "path";
-import fs from "fs";
+const User = require("../models/User");
+const bcrypt = require("bcrypt");
+const multer = require("multer");
+const path = require("path");
+const fs = require("fs");
 
 // Multer storage config
 const storage = multer.diskStorage({
@@ -94,4 +94,4 @@ router.put("/:id/password", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;

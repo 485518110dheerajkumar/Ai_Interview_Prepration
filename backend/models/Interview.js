@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 // Individual question and answer schema
 const QuestionSchema = new mongoose.Schema({
@@ -29,7 +29,4 @@ InterviewSchema.pre("save", function(next) {
   next();
 });
 
-
-const Interview = mongoose.model("Interview", InterviewSchema);
-
-export default Interview;
+module.exports = mongoose.model("Interview", InterviewSchema);

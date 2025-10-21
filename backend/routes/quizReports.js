@@ -1,5 +1,5 @@
-import express from "express";
-import QuizReport from "../models/QuizReport";
+const express = require("express");
+const QuizReport = require("../models/QuizReport");
 
 const router = express.Router();
 
@@ -34,4 +34,4 @@ router.get("/user/:userId", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;

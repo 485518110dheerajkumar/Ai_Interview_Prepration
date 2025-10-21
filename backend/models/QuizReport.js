@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const quizReportSchema = new mongoose.Schema({
   userId: { type: String, required: true },  
@@ -21,5 +21,4 @@ const quizReportSchema = new mongoose.Schema({
 
 const QuizReport = mongoose.model("quizreports", quizReportSchema);
 
-
-export default QuizReport;
+module.exports = QuizReport;
