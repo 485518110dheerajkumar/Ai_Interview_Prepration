@@ -1,6 +1,6 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const Report = require("../models/Report");
+import Report from "../models/Report";
 
 // Save a new report
 router.post("/", async (req, res) => {
@@ -23,4 +23,4 @@ router.get("/", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

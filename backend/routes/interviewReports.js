@@ -1,12 +1,12 @@
 // routes/interviewRoutes.js
-const express = require("express");
-const multer = require("multer");
-const pdfParse = require("pdf-parse");
-const fs = require("fs");
-const { GoogleGenerativeAI } = require("@google/generative-ai");
-const Interview = require("../models/Interview");
-const User = require("../models/User");
-const mongoose = require("mongoose");
+import express from "express";
+import multer from "multer";
+import pdfParse from "pdf-parse";
+import fs  from "fs";
+import { GoogleGenerativeAI } from "@google/generative-ai";
+import Interview from "../models/Interview";
+import User from "../models/User";
+import mongoose from "mongoose";
 
 const router = express.Router();
 const upload = multer({
@@ -216,4 +216,4 @@ router.get("/report/:id", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

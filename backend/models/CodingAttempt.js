@@ -1,5 +1,5 @@
 // backend/models/CodingAttempt.js
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const attemptSchema = new mongoose.Schema({
    userId: { type: String, required: true }, 
@@ -13,4 +13,4 @@ const attemptSchema = new mongoose.Schema({
 
 const Attempt = mongoose.model("codingattempts", attemptSchema);
 
-module.exports = Attempt;
+export default Attempt;

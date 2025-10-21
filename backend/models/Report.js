@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const ReportSchema = new mongoose.Schema({
   username: { type: String, required: true }, // optional, or use userId if auth exists
@@ -11,4 +11,7 @@ const ReportSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model("Report", ReportSchema);
+
+const Report = mongoose.model("Report", ReportSchema);
+
+export default Report;
