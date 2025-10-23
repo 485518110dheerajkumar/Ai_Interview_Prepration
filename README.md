@@ -47,5 +47,5 @@ It’s your all-in-one preparation companion — **Practice. Prepare. Perform.**
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/PrepBot.git
-cd PrepBot
+git clone https://github.com/485518110dheerajkumar/Ai_Interview_Prepration.git
+cd Ai_Interview_Prepration
